@@ -1,0 +1,30 @@
+{
+  "name": "condition-check",
+  "description": "A node module check conditions.",
+  "version": "1.0.0",
+  "keywords" : ["condition"],
+  "bugs" : {
+    "url" : "https://github.com/AdityaHegde/condition-check/issues"
+  },
+  "license" : "MIT",
+  "author": "AdityaHegde <adityahegderocks@gmail.com>",
+  "main" : "lib/CheckCondition.js",
+  "devDependencies": {
+    "express": "*",
+    "mocha" : "*",
+    "should": "*",
+    "istanbul": "*",
+    "glob": "*"
+  },
+  "dependencies": {
+    "lodash": "*",
+    "heap": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdityaHegde/condition-check.git"
+  },
+  "scripts": {
+    "test" : "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --check-leaks -t 60000 tests/*.js"
+  }
+}
